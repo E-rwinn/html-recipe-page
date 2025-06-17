@@ -53,16 +53,49 @@
     button:hover{
       background-color: rgba(0, 169, 0.8)
     }
+    .drop-down li{
+      list-style: none;
+      height: 100%;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .drop-down{
+      position: absolute;
+      padding: 0.5rem 0;
+      margin: 0.5rem -0.5rem;
+      background: white;
+      color: black;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      font-size: 12px;
+    }
+
+    .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
   </style>
   <title>Recipe Website</title>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="" class="logo" height="50px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="" class="logo" height="50px" href="index.html">
     <nav>
       <ul class="nav-links">
         <li><a href="">Home</a></li>
-        <li><a href="">Recipes</a></li>
+        <li class="nav-links">
+        <a href="#">Recipes</a>
+         <ul class="drop-down">
+          <a href="taco.html"><li>Tacos</li></a>
+          <a href="rice.html"><li>rice</li></a>
+          <a href="churros.html"><li>churros</li></a>
+         </ul>
+        </li>
         <li><a href="">Deserts</a></li>
         <li><a href="">About Me</a></li>
       </ul>
