@@ -5,103 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
-    *{
-      box-sizing: border-box;
-    }
-    body{
-      background-color: rgb(253, 253, 252, 100%);
-    }
-    li, a, button {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      color: #000000;
-      text-decoration: none;
-    }
-    header {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 30px 10%;
-    }
-    .logo{
-      cursor: pointer;
-      margin-right: auto;
-    }
-    .nav-links{
-      list-style: none;
-    }
-    .nav-links li {
-      display: inline-block;
-      padding: 0px 20px;
+    * {
+  box-sizing: border-box;
+}
 
-    }
-    .nav-links li a{
-      transition: all 0.3s ease 0s;
-    }
-    .nav-links li a:hover{
-      color: rgb(0, 169, 8);
-    }
-    button{
-      padding: 9px 25px;
-      background-color: rgb(0, 169, 8);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: all 0.3s ease 0s;
-    }
-    button:hover{
-      background-color: rgba(0, 169, 0.8)
-    }
-    .drop-down li{
-      list-style: none;
-      height: 100%;
-      padding: 0.5rem 1rem;
-      font-weight: 500;
-      cursor: pointer;
-    }
-    .drop-down{
-      position: absolute;
-      padding: 0.5rem 0;
-      margin: 0.5rem -0.5rem;
-      background: white;
-      color: black;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 0.5rem;
-      font-size: 12px;
-    }
+body {
+  background-color: rgba(253, 253, 252, 1);
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
 
-    .dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  border: none;
+  color: #000000;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
   cursor: pointer;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(0, 169, 8);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(0, 169, 8);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+  color: white;
+}
+
+button:hover {
+  background-color: rgba(0, 169, 0, 0.8);
+}
+
+/* Dropdown wrapper */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu */
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  z-index: 1000;
+  min-width: 150px;
+}
+.drop-down li{
+  list-style: none;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+.drop-down li a{
+  color: black;
+  display: block;
+  transition: color 0.3s ease;
+}
+.drop-down li a:hover{
+  color: rgb(0, 169, 8);
+}
+.dropdown:hover .drop-down{
+  display: block;
 }
   </style>
   <title>Recipe Website</title>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="" class="logo" height="50px" href="index.html">
-    <nav>
-      <ul class="nav-links">
-        <li><a href="">Home</a></li>
-        <li class="nav-links">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Logo" class="logo" height="50px">
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+
+      <li class="dropdown">
         <a href="#">Recipes</a>
-         <ul class="drop-down">
-          <a href="taco.html"><li>Tacos</li></a>
-          <a href="rice.html"><li>rice</li></a>
-          <a href="churros.html"><li>churros</li></a>
-         </ul>
-        </li>
-        <li><a href="">Deserts</a></li>
-        <li><a href="">About Me</a></li>
-      </ul>
-    </nav>
-    <a href="" class="btn"><button>Contact</button></a>
-  </header>
+        <ul class="drop-down">
+          <li><a href="taco.html">Tacos</a></li>
+          <li><a href="rice.html">Rice</a></li>
+          <li><a href="churros.html">Churros</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">Desserts</a>
+        <ul class="drop-down">
+          <li><a href="flan.html">Flan</a></li>
+          <li><a href="tresleches.html">Tres Leches</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">About Me</a></li>
+    </ul>
+  </nav>
+
+  <a href="#" class="btn"><button>Contact</button></a>
+</header>
+
   <h1>Recipe for beginers</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quasi
   blanditiis corporis error eos sint rem est aspernatur. Illum maxime dolorem 
