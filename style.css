@@ -24,14 +24,14 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   position: relative;
   z-index: 10;
 }
 
 .logo {
   cursor: pointer;
-  margin-right: auto;
+  margin-right: 500px;
 }
 
 .nav-links {
@@ -44,7 +44,7 @@ header {
 .nav-links li {
   position: relative;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 
 .nav-links li a {
