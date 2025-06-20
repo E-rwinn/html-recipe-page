@@ -130,3 +130,7 @@ button:hover {
     padding-top: 15px;
     height: 659px;
 }
+
+.recipes-container {
+    display: flex;
+}
