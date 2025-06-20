@@ -123,8 +123,7 @@ button:hover {
 
 /*Recipes section*/
 #Recipes { 
-    background: #FFFFFF;
-    background-color: #FF0000; /*Temporary red background for visibility*/
+    background: #F2F0ED;
     padding-right: 144px;
     padding-left: 144px;
     padding-top: 15px;
@@ -133,4 +132,21 @@ button:hover {
 
 .recipes-container {
     display: flex;
+}
+
+.recipe-card {
+   background-color: #FFFFFF;
+   width: 100%;
+}
+
+#Recipes img {
+    height: 400px;
+    width: 96%;
+}
+
+.recipe-card h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    padding: 20px;
 }
