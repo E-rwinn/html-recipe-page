@@ -223,3 +223,15 @@ footer {
   font-family: 'Montserrat', sans-serif;
   user-select: none;
 }
+
+footer a {
+  color: #6b5e53;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4a3d32;
+  text-decoration: underline;
+}
