@@ -144,7 +144,7 @@ button:hover {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   overflow: hidden;
-  width: calc((100% / 4) - 20px); /* 4 cards per row */
+  width: calc((100% / 4) - 20px); 
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -197,16 +197,14 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0, 140, 7, 0.6);
 }
 
-
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
   .recipe-card {
-    width: calc((100% / 2) - 20px); /* 2 cards per row */
+    width: calc((100% / 2) - 20px); 
   }
 }
 
 @media (max-width: 600px) {
   .recipe-card {
-    width: 100%; /* 1 card per row */
+    width: 100%; 
   }
 }
