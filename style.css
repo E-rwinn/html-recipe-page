@@ -223,25 +223,3 @@ footer {
   font-family: 'Montserrat', sans-serif;
   user-select: none;
 }
-
-footer p {
-  margin: 0.3rem 0;
-}
-
-footer p a {
-  color: #c87c4c; 
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-footer p a:hover {
-  color: #b1693f;
-}
-
-footer p .heart {
-  color: #c87c4c;
-  margin-left: 6px;
-  font-size: 1.1rem;
-  vertical-align: middle;
-}
