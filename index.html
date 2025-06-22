@@ -12,23 +12,6 @@
   <title>Recipe Website</title>
 </head>
 <body>
-  <header>
-    <a href="index.html">
-      <img src="assets/Untitled (4).png" alt="Logo" class="logo" height="50px" />
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-
-        <li class="dropdown">
-          <a href="#Recipes">Recipes</a>
-          <ul class="drop-down">
-            <li><a href="taco.html">Tacos</a></li>
-            <li><a href="rice.html">Rice</a></li>
-            <li><a href="churros.html">Churros</a></li>
-            <li><a href="tamales.html">Tamales</a></li>
-          </ul>
-        </li>
         <!--
         <li class="dropdown">
           <a href="#">Desserts</a>
@@ -39,10 +22,30 @@
         </li>
 
         <li><a href="#">About Me</a></li>-->
+
+  <header>
+    <a href="index.html">
+      <img src="assets/Untitled (4).png" alt="Logo" class="logo" height="50px" />
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li class="dropdown">
+          <a href="#Recipes">Recipes</a>
+          <ul class="drop-down">
+            <li><a href="taco.html">Tacos</a></li>
+            <li><a href="rice.html">Rice</a></li>
+            <li><a href="churros.html">Churros</a></li>
+            <li><a href="tamales.html">Tamales</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
-    <a href="contact.html" class="btn"><button>Contact</button></a>
+    <a href="contact.html" class="btn">Contact</a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
   </header>
 
   <section id="Home">
@@ -123,6 +126,6 @@
     <a href="" target="_blank" rel="noopener noreferrer">Portfolio</a>
   </p>
 </footer>
-
+<script>src="script.js"</script>
 </body>
 </html>
