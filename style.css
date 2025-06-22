@@ -208,3 +208,40 @@ button:hover {
     width: 100%; 
   }
 }
+
+/*Footer section*/
+footer {
+  background-color: #F2F0ED; 
+  color: #6b5e53; 
+  text-align: center;
+  padding: 2rem 8%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-top: 1px solid #e0d8d0;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+footer p a {
+  color: #c87c4c; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer p a:hover {
+  color: #b1693f;
+}
+
+footer p .heart {
+  color: #c87c4c;
+  margin-left: 6px;
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
