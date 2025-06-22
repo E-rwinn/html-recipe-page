@@ -343,3 +343,9 @@ footer a:hover {
     border-radius: 8px;
   }
 }
+/* Responsive styles for the 3D image on*/
+@media (max-width: 768px) {
+  .image-3d {
+    display: none;
+  }
+}
