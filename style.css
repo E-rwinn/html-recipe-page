@@ -1,79 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
-    * {
+
+/* Base Reset */
+* {
   box-sizing: border-box;
-}
-
-body {
-  background-color: rgba(253, 253, 252, 1);
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
-li, a, button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 15px 10%;
-  background-color: #FFFFFF;
-  position: relative;
-  z-index: 10;
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  cursor: pointer;
-  margin-right: 500px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.nav-links li {
-  position: relative;
-  display: inline-block;
-  padding: 0px 10px;
+body {
+  background-color: #fdfdfc;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
 }
 
+/* Typography Defaults */
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header - Compact Navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 70px;
+}
+
+/* Logo */
+.logo {
+  height: 40px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* Link Styling */
 .nav-links li a {
-  transition: all 0.3s ease 0s;
+  font-size: 15px;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: rgb(0, 169, 8);
 }
 
-button {
-  padding: 9px 25px;
-  background-color: rgb(0, 169, 8);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  font-size: 16px;
-  color: white;
-}
-
-button:hover {
-  background-color: rgba(0, 169, 0, 0.8);
-}
-
-.dropdown {
-  position: relative;
+/* Dropdown Menu */
+.dropdown:hover .drop-down {
+  display: block;
 }
 
 .drop-down {
@@ -84,66 +80,217 @@ button:hover {
   background: white;
   padding: 0.5rem 0;
   margin: 0;
+  list-style: none; /* Removes bullets */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   z-index: 1000;
   min-width: 150px;
 }
-.drop-down li{
-  list-style: none;
+
+.drop-down li {
   padding: 10px 20px;
   white-space: nowrap;
 }
-.drop-down li a{
+
+.drop-down li a {
   color: black;
   display: block;
   transition: color 0.3s ease;
 }
-.drop-down li a:hover{
+
+.drop-down li a:hover {
   color: rgb(0, 169, 8);
 }
-.dropdown:hover .drop-down{
-  display: block;
+
+/* Contact Button */
+.btn {
+  background-color: rgb(0, 169, 8);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  text-align: center;
+  display: inline-block;
 }
 
-/*Home section*/
+.btn:hover {
+  background-color: rgba(0, 169, 0, 0.85);
+}
+
+/* Home Section */
 #Home {
-    display: flex;
-    background: #F2F0ED;
-    padding-right: 144px;
-    padding-left: 144px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.introduction-container {
-    padding-bottom: 50px;
-    padding-top: 100px;
-    margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2F0ED;
+  padding: 3rem 10%;
+  gap: 2rem;
 }
 
-/*Recipes section*/
-#Recipes { 
-    background: #F2F0ED;
-    padding-right: 144px;
-    padding-left: 144px;
-    padding-top: 15px;
-    height: 659px;
+.introduction-container {
+  flex: 1;
+  padding-top: 1rem;
+}
+
+.introduction-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.introduction-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.3d-image {
+  flex: 1;
+}
+
+.3d-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Recipes Section */
+#Recipes {
+  background: #F2F0ED;
+  padding: 3rem 10%;
+}
+
+#Recipes h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .recipes-container {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .recipe-card {
-   background-color: #FFFFFF;
-   width: 100%;
+  background-color: #ffffff;
+  flex: 1 1 calc(25% - 20px);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#Recipes img {
-    height: 400px;
-    width: 96%;
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-.recipe-card h1 {
-    
+.recipe-card h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.recipe-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.recipe-card .btn {
+  margin-top: 10px;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Desserts Section */
+#Desserts {
+  background: #fdfdfc;
+  padding: 3rem 10%;
+}
+
+#Desserts h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* About Me Section */
+#AboutMe {
+  background-color: #F2F0ED;
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .recipe-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .recipe-card {
+    flex: 1 1 100%;
+  }
+
+  #Home {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .introduction-container,
+  .3d-image {
+    flex: 1 1 100%;
+  }
+
+  .3d-image img {
+    max-height: 350px;
+  }
 }
