@@ -350,14 +350,16 @@ footer a:hover {
 /*Responsive btn view recipe for mobile*/
 @media (max-width: 768px) {
   .recipe-card .btn {
-    align-self: center;
-    margin: 15px auto 20px auto;
+      align-self: center;
+      margin: 15px auto 20px auto;
+      width: 90%;
   }
 }
 @media (max-width: 300px) {
   .recipe-card .btn {
     align-self: center;
     margin: 15px auto 20px auto;
+    width: 90%;
   }
 }
 
