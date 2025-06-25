@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+  margin: 0;
+  padding: 0 16px;
+  line-height: 1.6;
+}
+
+a.back-btn {
+  display: inline-block;
+  margin: 16px 0;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  background: rgb(0, 169, 8);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+a.back-btn:hover {
+  background: rgb(0, 169, 8, 0.8);
+}
+
+.recipe-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.recipe-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.meta {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #b34700;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #555;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .recipe-image {
+    max-height: 250px;
+  }
+}
