@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f4f2;
+  margin: 0;
+  padding: 20px 10%;
+  color: #2a2a2a;
+  line-height: 1.6;
+}
+
+a.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #007b3e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.back-link:hover {
+  color: #005c2b;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.alt-name {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  margin: 25px 0;
+}
+
+.details {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 12px;
+  color: #007b3e;
+}
+
+ol {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+ol li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 16px 5%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .recipe-image {
+    max-width: 100%;
+  }
+
+  ol {
+    padding: 16px 20px;
+  }
+}
