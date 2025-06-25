@@ -2,79 +2,88 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fffdf7;
-  color: #333;
+  background-color: #fff8f2;
   margin: 0;
-  padding: 0 16px;
+  padding: 20px 10%;
+  color: #222;
   line-height: 1.6;
 }
 
-a.back-btn {
+a.back-link {
   display: inline-block;
-  margin: 16px 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #e4572e;
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  background: rgb(0, 169, 8);
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: background 0.3s;
+  transition: color 0.3s ease;
 }
 
-a.back-btn:hover {
-  background: rgb(0, 169, 8, 0.8);
+a.back-link:hover {
+  color: #b33d1e;
 }
 
-.recipe-container {
-  max-width: 800px;
-  margin: 0 auto;
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  color: #1f1f1f;
 }
 
-.title {
-  font-size: 2.5rem;
-  margin-bottom: 0.2rem;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 1rem;
+.alt-name {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: normal;
 }
 
 .recipe-image {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 16px;
-  margin: 20px 0;
+  max-width: 680px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  margin: 25px 0;
 }
 
-.meta {
-  font-style: italic;
+.details {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 30px;
   color: #444;
-  margin-bottom: 1.5rem;
 }
 
 h2 {
+  font-size: 1.4rem;
   margin-top: 2rem;
-  color: #b34700;
+  margin-bottom: 12px;
+  color: #e4572e;
 }
 
-h3 {
-  margin-top: 1rem;
-  color: #555;
+ol {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  max-width: 720px;
+  margin-bottom: 40px;
 }
 
-ul, ol {
-  padding-left: 1.5rem;
+ol li {
+  margin-bottom: 12px;
 }
 
-@media (max-width: 600px) {
-  .title {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  body {
+    padding: 16px 5%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 
   .recipe-image {
-    max-height: 250px;
+    max-width: 100%;
+  }
+
+  ol {
+    padding: 16px 20px;
   }
 }
