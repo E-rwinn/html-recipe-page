@@ -81,3 +81,29 @@ ol li {
     padding: 16px 20px;
   }
 }
+/* footer */
+footer {
+  background-color: transparent;
+  color: #6b5e53;
+  text-align: center;
+  padding: 2rem 8%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-top: 1px solid #e0d8d0;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+footer a {
+  color: #6b5e53;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4a3d32;
+  text-decoration: underline;
+} 
