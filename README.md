@@ -1,2 +1,10 @@
-# Project-X
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# 🌮 Mexican Recipes
+
+A clean, responsive website showcasing classic Mexican dishes.  
+Built with pure HTML and CSS — no frameworks, just flavor.
+
+## ✨ FEATURES
+
+- 📱 Seamlessly adapts to any screen size  
+- 🎨 Crisp, modern look with a subtle Mexican touch  
+- ⚡ Lightning-fast and easy to navigate
